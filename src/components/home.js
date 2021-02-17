@@ -46,6 +46,9 @@ export default class home extends Component {
   // };
 
   // When the form is submitted, search the Giphy API for `this.state.search`
+
+  //TODO: get sort function working on all employees
+
   handleFormSubmit = (event) => {
     event.preventDefault();
     this.setState({
@@ -62,7 +65,7 @@ export default class home extends Component {
 
   render() {
     return (
-      <div>
+      <div className="homeDiv">
         <Searchlist
           search={this.state.search}
           handleFormSubmit={this.handleFormSubmit}

@@ -1,6 +1,6 @@
-.homeDiv {
-  background-color: linear-gradient(
-    to right,
+body {
+  background: radial-gradient(
+    circle closest-side,
     red,
     orange,
     yellow,

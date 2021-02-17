@@ -14,7 +14,11 @@ function List(props) {
             />
             <br></br>
             <span>
-              {results.name.first} {results.name.last}
+              <strong>
+                {results.name.first} {results.name.last}
+                <br></br>
+                {results.email}
+              </strong>
             </span>
           </li>
         ))}
