@@ -1,0 +1,19 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.listtwo {
+  min-width: 400px;
+  margin-top: 100px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.table {
+  display: table; /* Allow the centering to work */
+  margin: 0 auto;
+}
