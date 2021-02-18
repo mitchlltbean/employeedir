@@ -36,18 +36,30 @@ export default class home extends Component {
     });
   };
 
-  // filterResults = () => {
-  //   this.setState({
-  //     Filteredperson: results.filter((dog) => {
-  //       console.log(dog, "!!!!!!!!!!!");
-  //       dog.name.last.includes(this.state.search);
-  //     }),
-  //   });
-  // };
-
   // When the form is submitted, search the Giphy API for `this.state.search`
-
+  // array.sort(function(a, b){
+  //   var nameA=a.name.toLowerCase(), nameB=b.name.toLowerCase();
+  //   if (nameA < nameB) //sort string ascending
+  //    return -1;
+  //   if (nameA > nameB)
+  //    return 1;
+  //   return 0; //default return value (no sorting)
+  //  });
   //TODO: get sort function working on all employees
+  handleSortSubmit = (event) => {
+    event.preventDefault();
+    const sortres = this.state.Filteredperson;
+    sortres.sort(function (a, b) {
+      var nameA = a.name.last.toLowerCase(),
+        nameB = b.name.last.toLowerCase();
+      if (nameA < nameB)
+        //sort string ascending
+        return -1;
+      if (nameA > nameB) return 1;
+      return 0; //default return value (no sorting)
+    });
+    this.setState(sortres);
+  };
 
   handleFormSubmit = (event) => {
     event.preventDefault();
@@ -70,6 +82,7 @@ export default class home extends Component {
           search={this.state.search}
           handleFormSubmit={this.handleFormSubmit}
           handleInputChange={this.handleInputChange}
+          handleSortSubmit={this.handleSortSubmit}
         />
         <br></br>
         <List results={this.state.Filteredperson} />

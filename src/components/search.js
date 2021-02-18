@@ -25,6 +25,14 @@ function Searchlist(props) {
           Search
         </button>
       </div>
+      <div ClassName="sort">
+        <button
+          onClick={props.handleSortSubmit}
+          className="btn btn-primary mt-3"
+        >
+          Sort by Last Name
+        </button>
+      </div>
     </form>
   );
 }

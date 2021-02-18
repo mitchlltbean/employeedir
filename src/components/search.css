@@ -22,3 +22,7 @@
 .search {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
+
+.sort {
+  justify-content: center;
+}
