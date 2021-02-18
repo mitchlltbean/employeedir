@@ -1,4 +1,4 @@
-# Burger Time App
+# Employee Dir
 
 Video link to how app works: https://drive.google.com/file/d/1KIniCND1UIEiFHyE6r7NkcI6u081PWqO/view
 
